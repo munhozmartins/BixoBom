@@ -14,40 +14,39 @@
             }
         },
         "button": {
-            "prototype": "montage/ui/button.reel",
+            "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
                 "enabled": true,
-                "formenctype": "application/x-www-form-urlencoded",
-                "label": "Button",
-                "type": "button"
+                "label": "New Task"
+            }
+        },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "content": [
+                    "",
+                    "",
+                    ""
+                ],
+                "contentController": {"@": "rangeController"}
             }
         },
         "rangeController": {
-            "prototype": "montage/core/range-controller",
-            "properties": {
-                "content": [],
-                "organizedContent": []
-            }
-        },
-        "text": {
-            "prototype": "montage/ui/text.reel",
-            "properties": {
-                "element": {"#": "text"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "value": "Projeto Bixo Bom"
-            }
+            "prototype": "montage/core/range-controller"
         },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
                 "element": {"#": "title"},
-                "value": "UNIFAE"
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Lista"
             }
         }
     }
@@ -56,8 +55,10 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <h1 data-montage-id="title"></h1>
-        <p data-montage-id="text"></p>
         <button data-montage-id="button"></button>
+        <ul data-montage-id="list">
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
