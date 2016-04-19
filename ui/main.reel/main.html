@@ -47,28 +47,22 @@
                 "contentController": {"@": "rangeController"}
             }
         },
+        "listItem": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem"},
+                "classList": {
+                    "type": "set",
+                    "values": {
+                        "0": ""
+                    }
+                },
+                "highlight": "teste",
+                "identifier": "teste"
+            }
+        },
         "rangeController": {
             "prototype": "montage/core/range-controller"
-        },
-        "repetition": {
-            "prototype": "montage/ui/repetition.reel",
-            "properties": {
-                "element": {"#": "repetition"},
-                "content": [
-                    ""
-                ],
-                "contentController": null,
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true",
-                "isSelectionEnabled": false,
-                "selectedIndexes": [
-                    0,
-                    0,
-                    0
-                ],
-                "selection": "Teste1"
-            }
         },
         "title": {
             "prototype": "digit/ui/title.reel",
@@ -86,6 +80,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <img data-montage-id="image">
+        <li data-montage-id="listItem"></li>
         <ul data-montage-id="repetition">
             <li></li>
         </ul>
