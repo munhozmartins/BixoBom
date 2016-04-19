@@ -21,7 +21,27 @@
                 "dir": "ltr",
                 "draggable": "true",
                 "enabled": true,
-                "label": "New Task"
+                "label": "Vídeo"
+            }
+        },
+        "button2": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button2"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Históri"
+            }
+        },
+        "button3": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button3"},
+                "active": false,
+                "enabled": true,
+                "label": "História"
             }
         },
         "image": {
@@ -38,13 +58,15 @@
         "list": {
             "prototype": "digit/ui/list.reel",
             "properties": {
-                "element": {"#": "list"},
                 "content": [
                     "",
                     "",
                     ""
                 ],
-                "contentController": {"@": "rangeController"}
+                "contentController": {"@": "rangeController"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
         "rangeController": {
@@ -67,10 +89,10 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <img data-montage-id="image">
         <h1 data-montage-id="title"></h1>
-        <button data-montage-id="button"></button>
-        <ul data-montage-id="list">
-            <li></li>
-        </ul>
+        <button data-montage-id="button">
+
+        </button>
+        <button data-montage-id="button3"></button>
     </div>
 </body>
 </html>
