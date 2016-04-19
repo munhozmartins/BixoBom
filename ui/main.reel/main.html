@@ -47,20 +47,6 @@
                 "contentController": {"@": "rangeController"}
             }
         },
-        "listItem": {
-            "prototype": "digit/ui/list-item.reel",
-            "properties": {
-                "element": {"#": "listItem"},
-                "classList": {
-                    "type": "set",
-                    "values": {
-                        "0": ""
-                    }
-                },
-                "highlight": "teste",
-                "identifier": "teste"
-            }
-        },
         "rangeController": {
             "prototype": "montage/core/range-controller"
         },
@@ -71,7 +57,7 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
-                "value": "Lista"
+                "value": "Menu"
             }
         }
     }
@@ -80,10 +66,6 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <img data-montage-id="image">
-        <li data-montage-id="listItem"></li>
-        <ul data-montage-id="repetition">
-            <li></li>
-        </ul>
         <h1 data-montage-id="title"></h1>
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
