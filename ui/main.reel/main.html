@@ -61,6 +61,16 @@
         "rangeController": {
             "prototype": "montage/core/range-controller"
         },
+        "textArea": {
+            "prototype": "digit/ui/text-area.reel",
+            "properties": {
+                "element": {"#": "textArea"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Site projeto Bixo Bom Unifae."
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -82,6 +92,7 @@
 
         </button>
         <button data-montage-id="button3"></button>
+        <textarea data-montage-id="textArea"></textarea>
     </div>
 </body>
 </html>
