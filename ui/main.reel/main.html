@@ -61,6 +61,16 @@
         "rangeController": {
             "prototype": "montage/core/range-controller"
         },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "“Bixo Bom” comemora sua 5ª edição com otimismo"
+            }
+        },
         "textArea": {
             "prototype": "digit/ui/text-area.reel",
             "properties": {
@@ -68,7 +78,7 @@
                 "contenteditable": "true",
                 "dir": "ltr",
                 "draggable": "true",
-                "value": "Site projeto Bixo Bom Unifae."
+                "value": "Site projeto Bixo Bom "
             }
         },
         "title": {
@@ -92,7 +102,7 @@
 
         </button>
         <button data-montage-id="button3"></button>
-        <textarea data-montage-id="textArea"></textarea>
+        <p data-montage-id="text"></p>
     </div>
 </body>
 </html>
